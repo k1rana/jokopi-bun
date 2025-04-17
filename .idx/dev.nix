@@ -10,10 +10,12 @@
     # pkgs.python311Packages.pip
     # pkgs.nodejs_20
     pkgs.bun
+    pkgs.git
   ];
   # Sets environment variables in the workspace
-  env = {};
-  idx = {
+  env = {
+    GIT_AUTHOR_NAME = "Farhan Brillan W"; GIT_AUTHOR_EMAIL = "fbrillanw@gmail.com";
+  };idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
       # "vscodevim.vim"
