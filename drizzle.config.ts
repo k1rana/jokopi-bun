@@ -7,7 +7,7 @@ export default defineConfig({
   out: './src/db/schema/migration',
   dialect: 'postgresql',
   dbCredentials: {
-    url: checkSecretOrThrowError("DB_URL")
+    url: checkSecretOrThrowError("DB_URL"),
   },
   verbose: true,
   strict: true,
